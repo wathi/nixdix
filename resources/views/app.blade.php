@@ -1,22 +1,209 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Vue Laravel SPA') }}</title>
-
-    <!-- Styles -->
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <header-component></header-component>
+@section('content')
+<div class="container">
+    <div class="mb-4">
+        <div class="d-flex flex-row">
+            <h5 class="mx-2">Hot</h5>
+            <h6 class="mx-2">Novel</h6>
+            <h6 class="mx-2">Picture</h6>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="..." alt="...">   
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>  
+                        </div>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Scripts -->
-    <script src="{{ mix('/js/app.js') }}" defer></script>
-</body>
-</html>
+    <div>
+        <div class="d-flex flex-row">
+            <h5 class="mx-2">Latest</h5>
+            <h6 class="mx-2">Novel</h6>
+            <h6 class="mx-2">Picture</h6>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4">
+        <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@endsection

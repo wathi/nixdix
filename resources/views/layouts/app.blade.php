@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'NixDix') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,11 +21,20 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'NixDix') }}
                 </a>
+
+                <!-- Search Bar -->
+                <div>
+                    <form class="d-flex">
+                        <input class="form-control form-control-sm mx-1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -78,6 +87,18 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer class="bg-dark text-secondary">
+            <div class="container">
+                <ul class="py-2">
+                    <ol>
+                        About
+                    </ol>
+                    <ol>
+                        Contact Us
+                    </ol>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
