@@ -88,7 +88,7 @@
             @yield('content')
         </main>
         <footer class="bg-dark text-secondary">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <ul class="py-2">
                     <ol>
                         About
@@ -97,7 +97,7 @@
                         Contact Us
                     </ol>
                 </ul>
-            </div>
+            <!-- </div> -->
         </footer>
     </div>
 </body>

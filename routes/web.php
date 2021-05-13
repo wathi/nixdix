@@ -21,6 +21,20 @@ Route::get('/', function() {
     return view('app');
 });
 
+Route::get('/novel', function() {
+    return view('novel');
+});
+
+Route::get('/author', function() {
+    return view('author');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

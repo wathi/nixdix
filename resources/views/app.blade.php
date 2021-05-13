@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    <div class="notice"></div>
     <div class="mb-4">
         <div class="d-flex flex-row">
             <h5 class="mx-2">Hot</h5>
